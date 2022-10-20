@@ -55,9 +55,11 @@ body{
 .layers__base{
     transform: translate3D(0,calc(var(--scrollTop) / 1.6), 0);
     z-index: 0;
+    will-change: transform;
 }
 .layers__front,.layers__middle{
     transform: translate3D(0,calc(var(--scrollTop) / 2.5), 0);
+    will-change: transform;
 }
 .layers__header{
     z-index: 1;
@@ -65,4 +67,5 @@ body{
     text-transform: uppercase;
     font-weight: 900;
     transform: translate3D(0,calc(var(--scrollTop) / 1.8), 0);
+    will-change: transform;
 }
